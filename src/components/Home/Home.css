@@ -1,0 +1,130 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #3a3a3a;
+}
+
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background: none;
+}
+
+.characters_section{
+    background: none;
+}
+
+.characters_section a {
+    background: none;
+}
+
+.characters_section_button{
+    background: none;
+    border: 2px solid #222165;
+    color: #222165;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 32px;
+    margin: 10px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 20px;
+}
+
+.characters_section_button:hover{
+    color: #cfdbdb;
+    border-color: #cfdbdb;
+    background-color: #222165;
+}
+
+.locations_section{
+    background: none;
+}
+
+.locations_section a {
+    background: none;
+}
+
+.locations_section_button{
+    background: none;
+    border: 2px solid #222165;
+    color: #222165;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 32px;
+    margin: 10px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 20px;
+}
+
+.locations_section_button:hover{
+    color: #cfdbdb;
+    border-color: #cfdbdb;
+    background-color: #222165;
+}
+
+.episodes_section a {
+    background: none;
+}
+
+.episodes_section{
+    background: none;
+}
+
+.episodes_section_button{
+    background: none;
+    border: 2px solid #222165;
+    color: #222165;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 32px;
+    margin: 10px;
+    padding: 20px 60px 20px 60px;
+    border-radius: 20px;
+}
+
+.episodes_section_button:hover{
+    color: #cfdbdb;
+    border-color: #cfdbdb;
+    background-color: #222165;
+}
+
+
+.home_container{
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: none;
+    background: url(../../assets/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.home_header{
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.header_title{
+    font-size: 60px;
+    color: #222165;
+    transition: 1s;
+}
+
+.header_title:hover{
+    color: #cfdbdb;
+}
+
+
+.copyright{
+    background: none;
+    color: #cfdbdb;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}

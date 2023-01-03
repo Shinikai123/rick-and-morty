@@ -1,0 +1,31 @@
+.character_card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5px; 
+    margin: 10px;
+    transition: 1s;
+    background: rgba(40, 40, 40, 50%);
+    border-radius: 20px;
+}
+
+.character_card:hover{
+    background: rgba(40, 40, 40, 95%);
+    color: #cfdbdb;
+}
+
+.card_image{
+    padding-top: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+}
+
+.card_name{
+}
+
+.card_info{
+
+}

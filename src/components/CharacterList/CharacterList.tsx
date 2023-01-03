@@ -1,25 +1,31 @@
 import { useEffect, useState } from "react";
 import Character from "./Character";
+import "./CharacterList.css";
+import { Link } from "react-router-dom";
 
 const NavPage =(props) =>{
     return(
-        <header className="d-flex justify-content-between align-items-center">
-            <p>Page: {props.page}</p>
-            <button className="btn btn-primary btn-sm" onClick={() => props.setPage(props.page - 1)}>
-             Previous Page {props.page -1}
-            </button>
-            <button className="btn btn-primary btn-sm" onClick={() => props.setPage(props.page + 1)}>
-               Next Page  {props.page +1}
-            </button>
+        <header className="header">
+            <div>
+                <p className="header_current_page">Page: {props.page}</p>
+            </div>
+            <Link to="/"><button className="home_button">Go Home</button></Link>
+            <div className="nav_button">
+                <button className="nav_button_previous" onClick={() => props.setPage(props.page - 1)}>
+                    Page {props.page -1}
+                </button>
+                <button className="nav_button_next" onClick={() => props.setPage(props.page + 1)}>
+                    Page  {props.page +1}
+                </button>
+            </div>
+            
         </header>
     )
 }
 
 const CharacterList = () => {
     
-    
-
-    const [characters, setCharacters] =useState([]);
+    const [characters, setCharacters] = useState([]);
     const [loading, setLoading] = useState(true);
     const [page, setPage] = useState(1);
 
@@ -44,10 +50,10 @@ return(
         <h1>Loading</h1>
     ) : (
         
-    <div className="row">
+    <div className="character_list">
     {characters.map(character => {
         return (
-        <div className="col-md-4" key={character.id}>
+        <div key={character.id}>
         <Character key={character.id} character={character} />
         </div>
     );

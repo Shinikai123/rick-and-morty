@@ -1,17 +1,24 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import CharacterList from "./components/CharacterList";
+import Home from "./components/Home/Home";
+import CharacterList from "./components/CharacterList/CharacterList";
+import LocationList from "./components/LocationList/LocationList";
+import EpisodeList from "./components/EpisodeList/EpisodeList";
+
+import {Routes, Route, BrowserRouter} from "react-router-dom";
 
 const App = () => {
 
       return(
-        <div className="bg-dark text-white">
-          <h1 className="text-center display-1 py-4">Rick and Morty site</h1>
-
-          <CharacterList/>
+        <BrowserRouter>
+        <Routes>
+          <Route path="/" element = {<Home/>}/>
+          <Route path="/characters" element = {<CharacterList/>}/>
+          <Route path="/locations" element = {<LocationList/>}/>
+          <Route path="/episodes" element = {<EpisodeList/>}/>
+        </Routes>
         
-        </div>
-      )
+      
+        </BrowserRouter>
+        )
   
 }
 

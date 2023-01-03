@@ -1,0 +1,28 @@
+.episode_card{
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5px; 
+    margin: 10px;
+    transition: 1s;
+    background: rgba(40, 40, 40, 50%);
+    border-radius: 20px;
+}
+
+.episode_card:hover{
+    background: rgba(40, 40, 40, 95%);
+    color: #cfdbdb;
+}
+
+.episode_card_name{
+}
+
+.episode_card_number{
+
+}
+
+.episode_card_date{
+    
+}
