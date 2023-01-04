@@ -6,10 +6,15 @@ import { Link } from "react-router-dom";
 const NavPage =(props) =>{
     return(
         <header className="header">
-            <div>
-                <p className="header_current_page">Page: {props.page}</p>
+            <div  className="filter_panel">
+                <p className="filter_panel_current_page">Page: {props.page}</p>
+                <div className="filters">
+                    <form>
+                    <input className="filter_input" type="search" placeholder="Enter location's type..."></input>
+                    </form>
+                    </div>
+                <Link to="/"><button className="home_button">Go Home</button></Link>
             </div>
-            <Link to="/"><button className="home_button">Go Home</button></Link>
             <div className="nav_button">
                 <button className="nav_button_previous" onClick={() => props.setPage(props.page - 1)}>
                     Page {props.page -1}
@@ -44,7 +49,7 @@ const LocationList = () => {
     
 
 return(
-<div className="container">
+<div className="location_list_container">
 
     <NavPage page={page} setPage={setPage}/>
 
@@ -64,7 +69,7 @@ return(
 </div>
 
     )}
-
+    <p className="copyright">© 2023 Innowise | Andrew Mihaylov</p>
 </div>
 )}
 

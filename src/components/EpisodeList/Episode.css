@@ -1,6 +1,6 @@
 .episode_card{
     width: 300px;
-    height: auto;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,12 +17,14 @@
 }
 
 .episode_card_name{
+    font-size: 20px;
+    text-align: start;
 }
 
 .episode_card_number{
-
+    margin-top: auto;
 }
 
 .episode_card_date{
-    
+    margin-bottom: 20px;
 }

@@ -16,16 +16,14 @@
     color: #cfdbdb;
 }
 
-.card_image{
-    padding-top: 15px;
-    width: 250px;
-    height: 250px;
-    border-radius: 150px;
+.location_card_name{
+    text-align: start;
+    font-size: 20px;
 }
 
-.card_name{
+.location_card_type{
 }
 
-.card_info{
+.location_card_dimension{
 
 }

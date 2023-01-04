@@ -2,10 +2,14 @@ body{
     padding: 0;
     margin: 0;
     background-color: #3a3a3a;
+    background-image: url(../../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
 }
 
-.container{
-    background: #3a3a3a;
+.location_list_container{
+    height: 100vh;
 }
 
 .header{
@@ -14,13 +18,24 @@ body{
     align-items: center;
 }
 
-.header_current_page{
-    margin-left: 10px;
+.filter_panel{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: max-content;
+}
+
+.filter_panel_current_page{
+    font-size: 19px;
     padding: 20px;
+    margin-left: 10px;
     border-radius: 30px 0px 0px 30px;
     background: rgba(40, 40, 40, 50%);
     border: none;
-    font-size: 18px;
+    border-right: 1px solid #3a3a3a;
 }
 
 .home_button{
@@ -29,16 +44,41 @@ body{
     padding: 20px;
     border-radius: 0px 30px 30px 0px;
     background: rgba(40, 40, 40, 50%);
+    transition: 1s;
     border: none;
     cursor: pointer;
 }
 
-.home_button a{
+.filter_panel a{
     text-decoration: none;
 }
 
+.filter_input{
+    font-size: 18px;
+    border: none;
+    padding: 20px;
+    background: rgba(40, 40, 40, 50%);
+    transition: 1s;
+    cursor:pointer;
+    border-right: 1px solid #3a3a3a;
+}
+
+.filter_input:hover{
+    color: #cfdbdb;
+    background: rgba(40, 40, 40, 95%);
+    
+}
+
+.filter_input:focus{
+    outline: none;
+    background: rgba(40, 40, 40, 95%);
+    color: #cfdbdb;
+}
 
 .nav_button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
     padding: 0;
     margin-left: auto;
     margin-top: 10px;
@@ -56,10 +96,6 @@ body{
     transition: 1s;
 }
 
-.home_button:hover{
-    background-color: rgba(40, 40, 40, 95%);
-    color: #cfdbdb;
-}
 
 .nav_button_previous:hover{
     background-color: rgba(40, 40, 40, 95%);
@@ -84,4 +120,20 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 100px;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
 }
+
+
+.copyright{
+    background: none;
+    color: #cfdbdb;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
