@@ -22,21 +22,21 @@ body{
 }
 
 .characters_section_button{
-    background: none;
-    border: 2px solid #222165;
-    color: #222165;
+    background:#009EB5;
+    border: none;
+    color: #cfdbdb;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.2s;
     font-size: 32px;
     margin: 10px;
     padding: 20px 60px 20px 60px;
     border-radius: 20px;
+    
 }
 
 .characters_section_button:hover{
     color: #cfdbdb;
-    border-color: #cfdbdb;
-    background-color: #222165;
+    background-color: #008497;
 }
 
 .locations_section{
@@ -48,11 +48,11 @@ body{
 }
 
 .locations_section_button{
-    background: none;
-    border: 2px solid #222165;
-    color: #222165;
+    background:#009EB5;
+    border: none;
+    color: #cfdbdb;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.2s;
     font-size: 32px;
     margin: 10px;
     padding: 20px 60px 20px 60px;
@@ -61,8 +61,7 @@ body{
 
 .locations_section_button:hover{
     color: #cfdbdb;
-    border-color: #cfdbdb;
-    background-color: #222165;
+    background-color: #008497;
 }
 
 .episodes_section a {
@@ -74,12 +73,12 @@ body{
 }
 
 .episodes_section_button{
-    background: none;
-    border: 2px solid #222165;
-    color: #222165;
+    background: #009EB5;
+    border: none;
+    color: #cfdbdb;
     cursor: pointer;
-    transition: 1s;
     font-size: 32px;
+    transition: 0.2s;
     margin: 10px;
     padding: 20px 60px 20px 60px;
     border-radius: 20px;
@@ -87,8 +86,7 @@ body{
 
 .episodes_section_button:hover{
     color: #cfdbdb;
-    border-color: #cfdbdb;
-    background-color: #222165;
+    background: #008497;
 }
 
 
@@ -110,7 +108,7 @@ body{
 
 .header_title{
     font-size: 60px;
-    color: #222165;
+    color: #009EB5;
     transition: 1s;
 }
 

@@ -58,16 +58,22 @@ body{
     border: none;
     padding: 20px;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
     transition: 1s;
     cursor:pointer;
     border-right: 1px solid #3a3a3a;
 }
 
-.filter_input:hover{
+.filter_input::placeholder{
     color: #cfdbdb;
-    background: rgba(40, 40, 40, 95%);
-    
+    background: rgba(40, 40, 40, 5%);
+    opacity: 1;
 }
+
+.filter_input:hover{
+    background: rgba(40, 40, 40, 50%);
+}
+
 
 .filter_input:focus{
     outline: none;

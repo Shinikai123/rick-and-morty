@@ -4,16 +4,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    font-size: 18px;
     padding:5px; 
     margin: 10px;
     transition: 1s;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
     border-radius: 20px;
 }
 
+
+.character_card hr {
+    width: 80%;
+    color: #cfdbdb;
+    margin-top: 2px;
+}
+
+
 .character_card:hover{
+    scale: 1.025;
     background: rgba(40, 40, 40, 95%);
     color: #cfdbdb;
+}
+
+.card_info{
+    height: 220px;
 }
 
 .card_image{
@@ -24,8 +40,22 @@
 }
 
 .card_name{
+    height: 50px;
+    font-size: 30px;
 }
 
-.card_info{
+.card_species{
+    margin: 10px;
+}
 
+.card_gender{
+    margin: 10px;
+}
+
+.card_origin{
+    margin: 10px;
+}
+
+.card_status{
+    margin: 10px;
 }

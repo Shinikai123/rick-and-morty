@@ -3,6 +3,25 @@ import Character from "./Character";
 import "./CharacterList.css";
 import { Link } from "react-router-dom";
 
+const CharacterList = () => {
+    
+    const [characters, setCharacters] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [page, setPage] = useState(1);
+
+    useEffect(() => {
+      async function fetchData(){
+        const response =  await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
+        const data = await response.json();
+        setLoading(false);
+        setCharacters(data.results);
+      }
+      
+      fetchData();
+    }, [page])
+  
+    
+    
 const NavPage =(props) =>{
     return(
         <header className="header">
@@ -10,19 +29,6 @@ const NavPage =(props) =>{
                 <p className="filter_panel_current_page">Page: {props.page}</p>
                 <div className="filters">
                     <form>
-                    <select className="filter_species">
-                        <option>All</option>
-                        <option>Human</option>
-                        <option>Humanoid</option>
-                        <option>Alien</option>
-                        <option>Unknown</option>
-                        <option>Poopybutthole</option>
-                        <option>Mythological Creature</option>
-                        <option>Robot</option>
-                        <option>Animal</option>
-                        <option>Cronenberg</option>
-                        <option>Disease</option>
-                    </select>
                     <select className="filter_gender">
                         <option>All</option>
                         <option>Male</option>
@@ -53,23 +59,6 @@ const NavPage =(props) =>{
     )
 }
 
-const CharacterList = () => {
-    
-    const [characters, setCharacters] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [page, setPage] = useState(1);
-
-    useEffect(() => {
-      async function fetchData(){
-        const response =  await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
-        const data = await response.json();
-        setLoading(false);
-        setCharacters(data.results);
-      }
-      
-      fetchData();
-    }, [page])
-    
 
 return(
 <div className="character_list_container">

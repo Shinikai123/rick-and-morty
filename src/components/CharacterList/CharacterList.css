@@ -13,6 +13,7 @@ body{
 }
 
 .header{
+    color: #cfdbdb;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -28,29 +29,13 @@ body{
     height: max-content;
 }
 
-.filter_species{
-    width: 13vw;
-    font-size: 18px;
-    border: none;
-    padding: 20px;
-    background: rgba(40, 40, 40, 50%);
-    transition: 1s;
-    cursor:pointer;
-    border-right: 1px solid #3a3a3a;
-}
-
-.filter_species:hover{
-    color: #cfdbdb;
-    background: rgba(40, 40, 40, 95%);
-    
-}
-
 .filter_gender{
     font-size: 18px;
     width: 8vw;
     border: none;
     padding: 20px;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
     transition: 1s;
     cursor:pointer;
     border-right: 1px solid #3a3a3a;
@@ -68,6 +53,7 @@ body{
     border: none;
     padding: 20px;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
     transition: 1s;
     cursor:pointer;
     border-right: 1px solid #3a3a3a;
@@ -94,6 +80,7 @@ body{
     padding: 20px;
     border-radius: 0px 30px 30px 0px;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
     transition: 1s;
     border: none;
     cursor: pointer;
@@ -121,6 +108,7 @@ body{
     background: rgba(40, 40, 40, 50%);
     border: none;
     border-right: 1px solid #3a3a3a;
+    color: #cfdbdb;
     cursor: pointer;
 }
 
@@ -129,6 +117,7 @@ body{
     padding: 20px;
     border-radius: 0px 30px 30px 0px;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
     border: none;
     cursor: pointer;
 }

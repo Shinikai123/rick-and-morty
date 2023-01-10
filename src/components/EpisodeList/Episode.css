@@ -1,15 +1,25 @@
 .episode_card{
     width: 300px;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    font-size: 20px;
     padding:5px; 
     margin: 10px;
     transition: 1s;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
     border-radius: 20px;
 }
+
+.episode_card hr {
+    width: 80%;
+    color: #cfdbdb;
+    margin-top: 2px;
+}
+
 
 .episode_card:hover{
     background: rgba(40, 40, 40, 95%);
@@ -17,14 +27,19 @@
 }
 
 .episode_card_name{
-    font-size: 20px;
-    text-align: start;
+    height: 70px;
+    font-size: 30px;
+}
+
+
+.episode_card_info{
+    height: 180px;
 }
 
 .episode_card_number{
-    margin-top: auto;
+    margin: 20px;
 }
 
 .episode_card_date{
-    margin-bottom: 20px;
+    margin: 20px;
 }

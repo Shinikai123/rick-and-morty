@@ -4,11 +4,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding:5px; 
     margin: 10px;
     transition: 1s;
     background: rgba(40, 40, 40, 50%);
+    color: #cfdbdb;
+    font-weight: bold;
     border-radius: 20px;
+}
+
+.location_card hr {
+    width: 80%;
+    color: #cfdbdb;
+    margin-top: 2px;
 }
 
 .location_card:hover{
@@ -17,13 +26,24 @@
 }
 
 .location_card_name{
-    text-align: start;
-    font-size: 20px;
+    height: 70px;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.location_card_info{
+    height: 120px;
 }
 
 .location_card_type{
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 18px
 }
 
 .location_card_dimension{
-
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px
 }

@@ -1,5 +1,6 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
+import HeaderTitle from "../../assets/header_title.png";
 
 const NavBar = () => {
   return(
@@ -21,8 +22,7 @@ const Home = () => {
     return (
         <div className="home_container">
             <div className="home_header">
-                <p className="header_title">Rick and Morty</p>
-
+                <img src={HeaderTitle} alt="Rick and Morty" className="header_title"/>
             </div>
           <NavBar/>
           <p className="copyright">© 2023 Innowise | Andrew Mihaylov</p>
